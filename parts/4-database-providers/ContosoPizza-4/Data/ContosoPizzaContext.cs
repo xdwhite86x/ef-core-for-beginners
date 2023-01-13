@@ -29,7 +29,9 @@ namespace ContosoPizza.Data
             // Secure connection string guidance: https://aka.ms/ef-core-connection-strings
             // 
             // optionsBuilder.UseSqlServer("Connection String Here");
-
+            optionsBuilder.UseNpgsql(
+                "User ID=danw;Password=admin;Host=192.168.100.55;Port=5432;Database=EfTest;Pooling=true;Connection Lifetime=0;");
+            
 
         }
 
